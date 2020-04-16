@@ -1,0 +1,147 @@
+//communit_test
+.topheader4{
+  position:absolute;left:0;top:0;z-index:9999;;
+  height:0.88rem;display:flex;box-sizing:border-box;
+  padding:0 0.2rem;width:100%;align-items:center;
+  width:7.5rem;
+  h2{display:table-cell;width:6.3rem;text-align:center;;font-size:0.3rem;font-weight:bold;
+  margin-left:0.5rem+0.2rem;}
+  .gouwuche{position: relative;
+    span{position:absolute;right:-20%;top:-20%;border-radius:50%;background-color:#ff6600;
+      color:#fff;font-size:0.2rem;height:0.2rem;width:0.2rem;text-align:center;
+    line-height:0.2rem;;}
+  }
+  i{font-size:0.34rem;color:#fff;;}
+  .bg1{background:rgba(0,0,0,0.3);border-radius:50%;padding:0.1rem;;}
+  .bg2{margin-left:0.2rem; }
+}
+//
+.text_kz{
+  font-size: 0.26rem;
+  line-height: 0.40rem;
+  overflow: hidden;
+  color: #666;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+//banner_focus
+#banner_focus{width:100%;position: relative;
+  .hd{position:absolute; width:100%;z-index:99;left:0%;bottom:0.4rem;width:100%;
+    ul{display:flex;justify-content: center;
+      li{background-color:#fff;border-radius:50%;height:0.2rem;width:0.2rem;margin:0 0.1rem;
+      color:transparent}
+      .on{background-color:#ff6600;;}
+    }
+  }
+  .bd{
+    ul{
+    li{
+      img{width:100%;}
+    }
+   }
+  }
+  
+}
+.index_active_detail{padding-bottom:0.88rem+0.08rem;;; 
+  .goods_detail{width:7.5rem;margin:0 auto;background-color: #fff;padding:0 0.55rem;box-sizing:border-box;
+    margin-top:-0.2rem;border-top-right-radius:0.25rem;border-top-left-radius:0.25rem;
+    position: relative;z-index: 99;padding-bottom:0.3rem;;;
+    padding-top:0.3rem;    
+    h2{font-size:0.3rem;font-weight:bold;color:#333;line-height:0.45rem;;;}
+    .jiage{display:flex;align-items:center;margin-top:0.2rem;;
+      p{color:#DE1616;margin-right:0.1rem;
+        span{font-family:'din';font-weight:bold;font-size:0.34rem;;}
+      }
+      em{line-height:1;padding:0.02rem 0.15rem;border:1px solid #DE1616;color:#DE1616;border-radius:0.05rem;
+      font-size:0.22rem;}
+    }
+    .fahuo{margin-top:0.3rem;border-top:1px dashed #eee;padding-top:0.3rem;
+      border-bottom:1px dashed #eee;padding-bottom:0.3rem;margin-bottom:0.3rem;
+      li{display: flex;justify-content:space-between;
+        span{width:0.65rem;color:#999;}
+        div{width:6.0rem;
+          h5{font-weight:bold;color:#333;margin-bottom:0.1rem;
+            i{font-size:0.26rem;margin-right:0.1rem;color:#999;}
+          }
+          p{line-height:0.4rem;;}
+        }
+      }
+      li:nth-child(2){margin-top:0.25rem;}
+    }
+    .pingjia{
+      h3{display: flex;justify-content:space-between;
+        span{font-size:0.26rem;color:#DE1616;
+        }
+        p{color:#333;font-weight:bold;
+          i{font-size:0.26rem;color:#999;margin-right:0.1rem;}
+        }
+      }
+      ul{display: flex;margin-right:0.15rem;flex-wrap:wrap;margin-top:0.25rem;
+        li{line-height:1;padding:0.12rem;border-radius:0.4rem;background-color:#eee;
+          margin-right:0.15rem;margin-bottom:0.12rem;
+        }
+      }
+    }
+  }
+  /*参数*/
+  .border_top{height:0.3rem;background-color: #eee;}
+  .cp_changsu{background-color:#fff;
+    .hd{
+      ul{display:flex;justify-content:space-between;
+        li{padding:0.25rem 0;text-align:center;margin:0 7%;font-size:0.34rem;font-weight:bold;
+          a{font-size:0.34rem;font-weight:bold;color:#333;}
+        }
+        .on{border-bottom:2px solid #DE1616;color:#DE1616;
+        }
+      }
+    }
+    ul{
+      li{
+        img{width:100%;}
+      }
+    }
+  }
+  /*底部添加购物车的效果*/
+  .footer_buy{position: fixed;width:7.5rem;left:50%;transform: translate(-50%,0);bottom:0;
+  background-color:#fff;z-index: 999;
+    ul{display:flex;justify-content: space-between;align-content:center;align-items:center;
+      li{text-align:center;width:1.2rem;;
+        i{display:block;width:100%;text-align:center;color:#999;font-size:0.34rem;}
+        span{color:#333;font-size:0.26rem;margin-top:0.1rem;display:block;;}
+      }
+      .btn{background-color:#ff6600;width:2.00rem;padding:0.35rem 0;line-height:1;
+        p{color:#fff;
+          a{color:#fff;}
+        }
+      }
+      .btn:nth-child(5){background-color:#DE1616;}
+    }
+  }  
+}
+//购物车tianjia;
+.gouwuche_model{background-color:#fff;border-top-left-radius:0.2rem;border-top-right-radius:0.2rem;
+position:fixed;left:50%;bottom:0px;z-index:9999;transform: translate(-50%,0);
+width:7.5rem;padding:0.2rem;box-sizing:border-box;
+  .close{position: absolute;right:0.2rem;top:0.2rem;font-size:0.3rem;color:#666;;}
+  .top{margin-top:0.3rem;display:flex;align-items:center;
+    img{height:1.5rem;width:1.5rem;margin-right:0.25rem;}
+    .right{
+      p{font-size:0.34rem;color:#DE1616;}
+      span{text-decoration: line-through;color:#999;font-size:0.22rem;;}
+    }
+  }
+  ul{margin-top:0.25rem;
+    li{margin-bottom:0.2rem;
+      h2{font-size:0.3rem;margin-bottom:0.15rem;}
+      div{display:flex;;
+        span{padding:0.1rem;border-radius:.3rem;margin-right:0.12rem;margin-bottom:0.12rem;
+        background-color:#eee;;}
+      }
+    }
+  }
+  .tijiao{width:100%;background-color:#DE1616;line-height:1;
+    padding:0.25rem 0;text-align:center;border-radius:0.35rem;color:#fff;}
+}
+.yincan{display:none;transition: all 0.3;;}

@@ -1,0 +1,568 @@
+@charset "UTF-8";
+.topheader3 {
+  height: 0.88rem;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 0.2rem;
+  width: 100%;
+  align-items: center;
+  width: 7.5rem;
+  background: #f5f5fa;
+}
+
+.topheader3 h2 {
+  display: table-cell;
+  width: 6.3rem;
+  text-align: center;
+  font-size: 0.3rem;
+  font-weight: bold;
+  width: 80%;
+}
+
+.topheader3 i {
+  font-size: 0.34rem;
+  color: #666;
+  width: 10%;
+}
+
+* {
+  color: #333;
+  box-sizing: border-box;
+}
+
+/*可以控制字体的长度*/
+.text_kz, .dd_xq .dingdang .list ul li div h4, .dfk_xq .dingdang .list ul li div h4 {
+  font-size: 0.26rem;
+  line-height: 0.40rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.btn3, .dd_xq .footer_pay div a, .dfk_xq .footer_pay div a {
+  border-radius: 0.5rem;
+  border: 1px solid #666;
+  text-align: center;
+  line-height: 1;
+  padding: 0.2rem;
+  color: #666;
+}
+
+.flex, .dd_xq .address, .dfk_xq .address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*待发货详情*/
+/*待评价详情*/
+/*待收货详情*/
+.dd_xq {
+  width: 7.5rem;
+  margin: 0 auto;
+  background-color: #f5f5fa;
+  /*地址修改*/
+  /*订单*/
+  /*zongjie*/
+  /*bianhao*/
+  /*xinxi*/
+}
+
+.dd_xq .address {
+  background-color: #fff;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  width: 7.1rem;
+  margin: 0 auto;
+  border-radius: 0.12rem;
+}
+
+.dd_xq .address i {
+  font-size: 0.34rem;
+  color: #666;
+  width: 0.34rem;
+}
+
+.dd_xq .address div {
+  width: 90%;
+  margin-left: 0.12rem;
+}
+
+.dd_xq .address div h5 {
+  font-weight: bold;
+  margin-bottom: 0.12rem;
+}
+
+.dd_xq .address div h5 span {
+  font-weight: bold;
+}
+
+.dd_xq .address div h5 em {
+  font-weight: bold;
+  margin-right: 0.12rem;
+}
+
+.dd_xq .dingdang {
+  width: 7.1rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  background-color: #fff;
+  border-top-left-radius: 0.12rem;
+  border-top-right-radius: 0.12rem;
+}
+
+.dd_xq .dingdang .list h5 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.15rem;
+}
+
+.dd_xq .dingdang .list h5 img {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  margin-right: 0.12rem;
+}
+
+.dd_xq .dingdang .list ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+}
+
+.dd_xq .dingdang .list ul li img {
+  width: 1.77rem;
+  height: 1.77rem;
+}
+
+.dd_xq .dingdang .list ul li div {
+  height: 1.77rem;
+  width: 4.77rem;
+  position: relative;
+}
+
+.dd_xq .dingdang .list ul li div h4 {
+  font-size: 0.3rem;
+  margin-bottom: 0.16rem;
+}
+
+.dd_xq .dingdang .list ul li div h4 em {
+  float: right;
+  color: #666;
+}
+
+.dd_xq .dingdang .list ul li div .dk {
+  line-height: 1;
+  padding: 0.03rem 0.1rem;
+  border: 1px solid #999;
+  color: #999;
+  font-size: 0.22rem;
+  border-radius: 0.03rem;
+  display: inline-block;
+}
+
+.dd_xq .dingdang .list ul li div .jiage {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.dd_xq .dingdang .list ul li div .jiage em {
+  font-weight: bold;
+  font-family: 'din';
+}
+
+.dd_xq .dingdang .list ul li div .btn2 {
+  border-radius: 0.5rem;
+  border: 1px solid #666;
+  text-align: center;
+  line-height: 1;
+  padding: 0.2rem;
+  color: #666;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+}
+
+.dd_xq .zongjie {
+  width: 7.1rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #fff;
+  border-bottom-left-radius: 0.12rem;
+  border-bottom-right-radius: 0.12rem;
+}
+
+.dd_xq .zongjie ul {
+  padding: 0.2rem;
+}
+
+.dd_xq .zongjie ul li {
+  margin-bottom: 0.18rem;
+}
+
+.dd_xq .zongjie ul li span {
+  color: #333;
+  display: inline-block;
+}
+
+.dd_xq .zongjie ul li span:nth-child(1) {
+  width: 1.3rem;
+  color: #666;
+}
+
+.dd_xq .zongjie ul li span:nth-child(3) {
+  float: right;
+}
+
+.dd_xq .zongjie .xj {
+  text-align: right;
+  border-top: 1px dashed #f5f5fa;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.dd_xq .bianhao {
+  width: 7.1rem;
+  padding: 0.4rem 0.2rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 0.2rem;
+  border-radius: 0.12rem;
+}
+
+.dd_xq .bianhao h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dd_xq .bianhao h2 span {
+  width: 1.3rem;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.dd_xq .bianhao h2 input {
+  width: 100%;
+  text-align: left;
+  outline: none;
+}
+
+.dd_xq .bianhao h2 i {
+  flex-shrink: 0;
+  color: #de1616;
+}
+
+.dd_xq .xinxi {
+  border-radius: 0.12rem;
+  width: 7.1rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 0.2rem;
+}
+
+.dd_xq .xinxi h2 {
+  font-weight: bold;
+  padding: 0.4rem 0.2rem;
+  border-bottom: 1px solid #f5f5fa;
+}
+
+.dd_xq .xinxi ul {
+  padding: 0.2rem;
+}
+
+.dd_xq .xinxi ul li {
+  padding-bottom: 0.18rem;
+  display: flex;
+}
+
+.dd_xq .xinxi ul li span {
+  width: 1.3rem;
+}
+
+.dd_xq .footer_pay {
+  background-color: #fff;
+  width: 7.5rem;
+  margin-top: 0.6rem;
+  padding: 0.15rem 0.2rem;
+  box-sizing: border-box;
+}
+
+.dd_xq .footer_pay div {
+  display: flex;
+  justify-content: flex-end;
+  /*待付款详情页*/
+}
+
+.dd_xq .footer_pay div a {
+  line-height: 1;
+  margin-left: 0.2rem;
+  width: 1.6rem;
+  text-align: center;
+}
+
+.dd_xq .footer_pay div .color_1 {
+  color: #ff6600;
+  border-color: #ff6600;
+}
+
+/*待付款详情页*/
+.dfk_xq {
+  width: 7.5rem;
+  margin: 0 auto;
+  background-color: #f5f5fa;
+  /*地址修改*/
+  /*订单*/
+  /*zongjie*/
+  /*bianhao*/
+  /*xinxi*/
+}
+
+.dfk_xq .address {
+  background-color: #fff;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  width: 7.1rem;
+  margin: 0 auto;
+  border-radius: 0.12rem;
+}
+
+.dfk_xq .address i {
+  font-size: 0.34rem;
+  color: #666;
+  width: 0.34rem;
+}
+
+.dfk_xq .address div {
+  width: 90%;
+  margin-left: 0.12rem;
+}
+
+.dfk_xq .address div h5 {
+  font-weight: bold;
+  margin-bottom: 0.12rem;
+}
+
+.dfk_xq .address div h5 span {
+  font-weight: bold;
+}
+
+.dfk_xq .address div h5 em {
+  font-weight: bold;
+  margin-right: 0.12rem;
+}
+
+.dfk_xq .dingdang {
+  width: 7.1rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  background-color: #fff;
+  border-top-left-radius: 0.12rem;
+  border-top-right-radius: 0.12rem;
+}
+
+.dfk_xq .dingdang .list h5 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.15rem;
+}
+
+.dfk_xq .dingdang .list h5 img {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  margin-right: 0.12rem;
+}
+
+.dfk_xq .dingdang .list ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+}
+
+.dfk_xq .dingdang .list ul li img {
+  width: 1.77rem;
+  height: 1.77rem;
+}
+
+.dfk_xq .dingdang .list ul li div {
+  height: 1.77rem;
+  width: 4.77rem;
+  position: relative;
+}
+
+.dfk_xq .dingdang .list ul li div h4 {
+  font-size: 0.3rem;
+  margin-bottom: 0.16rem;
+}
+
+.dfk_xq .dingdang .list ul li div h4 em {
+  float: right;
+  color: #666;
+}
+
+.dfk_xq .dingdang .list ul li div .dk {
+  line-height: 1;
+  padding: 0.03rem 0.1rem;
+  border: 1px solid #de1616;
+  color: #de1616;
+  font-size: 0.22rem;
+  border-radius: 0.03rem;
+  display: inline-block;
+}
+
+.dfk_xq .dingdang .list ul li div .jiage {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #de1616;
+}
+
+.dfk_xq .dingdang .list ul li div .jiage em {
+  font-weight: bold;
+  font-family: 'din';
+  color: #de1616;
+}
+
+.dfk_xq .dingdang .list ul li div .jiage i {
+  float: right;
+}
+
+.dfk_xq .zongjie {
+  width: 7.1rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #fff;
+  border-bottom-left-radius: 0.12rem;
+  border-bottom-right-radius: 0.12rem;
+}
+
+.dfk_xq .zongjie ul {
+  padding: 0.2rem;
+}
+
+.dfk_xq .zongjie ul li {
+  margin-bottom: 0.18rem;
+}
+
+.dfk_xq .zongjie ul li span {
+  color: #333;
+  display: inline-block;
+}
+
+.dfk_xq .zongjie ul li span:nth-child(1) {
+  width: 1.3rem;
+  color: #666;
+}
+
+.dfk_xq .zongjie ul li span:nth-child(3) {
+  float: right;
+}
+
+.dfk_xq .zongjie .xj {
+  text-align: right;
+  border-top: 1px dashed #f5f5fa;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.dfk_xq .bianhao {
+  width: 7.1rem;
+  padding: 0.4rem 0.2rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 0.2rem;
+  border-radius: 0.12rem;
+}
+
+.dfk_xq .bianhao h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dfk_xq .bianhao h2 span {
+  width: 1.3rem;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.dfk_xq .bianhao h2 input {
+  width: 100%;
+  text-align: left;
+  outline: none;
+}
+
+.dfk_xq .bianhao h2 i {
+  flex-shrink: 0;
+  color: #de1616;
+}
+
+.dfk_xq .xinxi {
+  border-radius: 0.12rem;
+  width: 7.1rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 0.2rem;
+}
+
+.dfk_xq .xinxi h2 {
+  font-weight: bold;
+  padding: 0.4rem 0.2rem;
+  border-bottom: 1px solid #f5f5fa;
+}
+
+.dfk_xq .xinxi ul {
+  padding: 0.2rem;
+}
+
+.dfk_xq .xinxi ul li {
+  padding-bottom: 0.18rem;
+  display: flex;
+}
+
+.dfk_xq .xinxi ul li span {
+  width: 1.3rem;
+}
+
+.dfk_xq .footer_pay {
+  background-color: #fff;
+  width: 7.5rem;
+  margin-top: 0.6rem;
+  padding: 0.15rem 0.2rem;
+  box-sizing: border-box;
+}
+
+.dfk_xq .footer_pay div {
+  display: flex;
+  justify-content: flex-end;
+  /*待付款详情页*/
+}
+
+.dfk_xq .footer_pay div a {
+  line-height: 1;
+  margin-left: 0.2rem;
+  width: 1.6rem;
+  text-align: center;
+}
+
+.dfk_xq .footer_pay div .color_1 {
+  color: #ff6600;
+  border-color: #ff6600;
+}
+
+/*评价晒单*/

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- 测试 BMI -->
+    <div class="bmi_test">
+        <h2>测试 BMI</h2>
+        <div  class="form">
+            <input type="text">
+        </div>
+    </div>
+    <script>
+        //vue
+        let arr = [3, 3, 13, 2];
+        let arr2 = ['nihao','xjj']
+        let obj = {
+            name: 'luo',
+            age: 18,
+            address: 'chashi'
+        }
+        //shift;删除数组的第一项，并返回被删除的值；
+        arr.shift();//3    arr:2,13,2;
+        console.log(arr);
+        //unshift 将参数添加到数组的头部；并返回数组的长度；
+        arr.unshift('cat')//arr.length;
+        console.log(arr);
+        //pop();删除原数组的最后一项，并返回删除的元素，如果数组为空就返回undefined;
+        var b= arr.pop();//
+        console.log(b,arr);            
+        //push  把值添加到数组的末尾并且返回数组的长度
+        //console.log(arr)
+        var b2 = arr.push(22) 
+        console.log(b2,arr);
+        //concat 数组的连接；返回一个新的数组
+        arr2=[10,21]
+        console.log(arr.concat(arr2));
+        //splice;有三个参数；
+        //splice(start,deleteCount,val1,val2);
+        //从start开始删除deleteCount项，并且从该位置添加val1,vau2,....等等；
+        //eg;
+        var  arr3 =[1,2,3]
+        console.log(arr3.splice(1,1,'str'))
+        console.log(arr3);
+        //检测数组
+        if(arr3 instanceof Array){
+            console.log('is Array');
+        }
+        //大部分都支持啊 ；
+        if(Array.isArray(arr3)){
+            console.log('is array');
+        }
+        //tostring 方法；
+        console.log(arr3.toString()==arr3.join(','));
+        console.log(arr3.join(','))
+        arr4= [
+            {age:18,name:'luo'},
+            {age:19,name:'luo'},
+        ]
+        //console.log(arr4[0].age)
+        //排序哦
+        //sort();
+        //compare()
+        arr6=[3,2,1,56,4,6,54]
+        const compare=(a,b)=>{
+           console.log(a,b);
+            if(a<b){
+                return -1
+            }else if(a>b){
+                return 1
+            }else{
+                return 0;
+            }
+        };
+        console.log(arr6.sort(compare))
+        //arr6.sort(compare)
+        //reverse();
+        var arr5= [1,2,3,4,5]
+        console.log(arr5.reverse())
+        //
+        function arrReverse(x){
+            if(Array.isArray(x)){
+                console.log()
+                return x.reverse();
+            }
+        }
+        console.log(arrReverse([12,3]))
+        //写一个alert();
+        function toastMsg(msg,time){
+            let timer = time || 1000;
+            //创建一个节点包含你的msg
+            oDiv = document.createElement('div');
+            oDiv.innerHTML= msg;
+            oDiv.style.cssText= 'max-width:60%;min-width: 150px;padding:0 14px;height: 40px;color: rgb(255, 255, 255);line-height: 40px;text-align: center;border-radius: 4px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 999999;background: rgba(0, 0, 0,.7);font-size: 16px;';
+            //挂起来呀
+            document.body.appendChild(oDiv);
+            //定时消失哦
+            setTimeout(function(){
+                
+                oDiv.style.transition = 'all 0.8s';
+                oDiv.style.opacity= '0';
+            },timer)    
+        }
+        toastMsg('luo',1000);
+    </script>
+</body>
+</html>

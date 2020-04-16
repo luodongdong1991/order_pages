@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="wap-font-scale" content="no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <base target="_self" />
+  <script src="js/font.js"></script>
+  <script src="js/vue.js"></script>
+  <!-- iconfont -->
+  <link rel="stylesheet" href="fonts/iconfont.css">
+  <!-- gundong -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/TouchSlide.1.1.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/dd_xq.css">
+</head>
+
+<body>
+  <!-- 订单详情页面 -->
+  <div class="dd_xq">
+    <div class="topheader3">
+      <i class="icon-icon-test59 iconfont" onclick="window.history.go(-1)"></i>
+      <h2>订单详情</h2>
+    </div>
+
+    <!-- 地址 -->
+    <div class="address">
+      <i class="iconfont icon-weibiaoti-3"></i>
+      <div>
+        <h5><em>黄燕玲</em><span>15274410000</span></h5>
+        <p>深圳市南山去西丽街道阳光工业区</p>
+      </div>
+      <a href=""><i class="iconfont icon-icon-test61"></i></a>
+    </div>
+    <!-- 订单 -->
+    <div class="dingdang">
+      <div class="list">
+        <h5><img src="images/touxiang.png"><span>店铺名称</span></h5>
+        <ul>
+          <li>
+            <img src="images/goods_pic.jpg">
+            <div>
+              <h4>芮美达黑椒地道肠3斤纯肉肠火山石烤肠纯肉台湾黑胡椒…<em>x1</em></h4>
+              <span class="dk">金豆可抵2%</span>
+              <h3 class="jiage">￥<em>63.00</em></h3>
+              <button class="btn2">退换货</button>
+            </div>
+          </li>
+          <li>
+            <img src="images/goods_pic.jpg">
+            <div>
+              <h4>芮美达黑椒地道肠3斤纯肉肠火山石烤肠纯肉台湾黑胡椒…<em>x1</em></h4>
+              <span class="dk">金豆可抵2%</span>
+              <h3 class="jiage">￥<em>63.00</em></h3>
+              <button class="btn2">退换货</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--  -->
+    <div class="zongjie">
+      <ul>
+        <li><span>发货时间：</span><span>24小时内发货</span></li>
+        <li><span>运输费用：</span><span>包邮</span></li>
+        <li><span>店铺优惠：</span><span>京豆抵扣现金</span><span>-￥1.12</span></li>
+      </ul>
+      <div class="xj">小计：<em>￥76.48</em></div>
+    </div>
+    <!--  -->
+    <div class="bianhao">
+      <h2>
+        <span>订单编号</span>
+        <input type="text" value="2020110333333" id="shuru">
+        <i id='copy'>复制</i>
+      </h2>
+    </div>
+    <!--  -->
+    <div class="xinxi">
+      <h2>订单编号</h2>
+      <ul>
+        <li><span>支付方式</span><em>支付宝</em></li>
+        <li><span>付款金额</span><em>￥76.48</em></li>
+        <li><span>京豆抵扣</span><em>120</em></li>
+        <li><span>支付时间</span><em>2020.11.03.-13:34</em></li>
+      </ul>
+    </div>
+    <div class="footer_pay">
+      <div>
+        <a href="">修改地址</a>
+        <a href="">提醒发货</a>
+      </div>      
+    </div>
+  </div>
+</body>
+<script>
+function Toast(msg,duration){
+      duration=isNaN(duration)?3000:duration;
+      var m = document.createElement('div');
+      m.innerHTML = msg;
+      //cssText;
+      m.style.cssText="max-width:60%;min-width: 150px;padding:0 14px;height: 40px;color: rgb(255, 255, 255);line-height: 40px;text-align: center;border-radius: 4px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 999999;background: rgba(0, 0, 0,.7);font-size: 16px;";
+      document.body.appendChild(m);
+      setTimeout(function() {
+        var d = 0.8;
+        m.style.webkitTransition = '-webkit-transform ' + d + 's ease-in, opacity ' + d + 's ease-in';
+        m.style.opacity = '0';
+        setTimeout(function() { document.body.removeChild(m) }, d * 1000);
+      }, duration);
+    }
+//复制订单号；
+let oCopy = document.querySelector('#copy');
+let oInput = document.querySelector('#shuru');
+oCopy.addEventListener('click',function(){
+  oInput.select();
+  document.execCommand("copy");
+  Toast('复制成功',800);
+}) 
+</script>
+</html>

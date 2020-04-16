@@ -1,0 +1,202 @@
+@charset "UTF-8";
+.topheader3 {
+  height: 0.88rem;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 0.2rem;
+  width: 100%;
+  align-items: center;
+  width: 7.5rem;
+  background: transparent;
+}
+
+.topheader3 h2 {
+  display: table-cell;
+  width: 6.3rem;
+  text-align: center;
+  font-size: 0.3rem;
+  font-weight: bold;
+  width: 80%;
+  color: #fff;
+}
+
+.topheader3 i {
+  font-size: 0.34rem;
+  color: #fff;
+  width: 10%;
+}
+
+.topheader3 .right_font {
+  font-size: 0.26rem;
+  color: #de1616;
+}
+
+* {
+  color: #333;
+  box-sizing: border-box;
+}
+
+/*可以控制字体的长度*/
+.text_kz, .zhifu_cg .act_pages ul li h2 {
+  font-size: 0.26rem;
+  line-height: 0.40rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.btn3 {
+  border-radius: 0.5rem;
+  border: 1px solid #666;
+  text-align: center;
+  line-height: 1;
+  padding: 0.2rem;
+  color: #666;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*支付成功*/
+.zhifu_cg {
+  width: 7.5rem;
+  margin: 0 auto;
+  /*标题*/
+  /*看看大家都买了啥*/
+}
+
+.zhifu_cg .top_out {
+  background: url(../images/zhifu_cg.png) 50% 0% no-repeat;
+  background-size: 100%;
+}
+
+.zhifu_cg .top_out .zhifu {
+  text-align: center;
+  color: #fff;
+  height: 4rem;
+}
+
+.zhifu_cg .top_out .zhifu h3 {
+  font-size: 0.34rem;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 1.7rem;
+}
+
+.zhifu_cg .top_out .zhifu p {
+  color: #fff;
+  padding-top: 0.15rem;
+}
+
+.zhifu_cg .top_out .zhifu h5 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.15rem;
+}
+
+.zhifu_cg .top_out .zhifu h5 a {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  width: 2rem;
+  text-align: center;
+  margin: 0 0.1rem;
+  padding: 0.1rem 0.0rem;
+  border-radius: 0.06rem;
+}
+
+.zhifu_cg .tt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.6rem;
+  padding-bottom: 0.3rem;
+  background-color: #fff;
+}
+
+.zhifu_cg .tt img {
+  width: 30%;
+  height: 2px;
+}
+
+.zhifu_cg .tt em {
+  width: 35%;
+  text-align: center;
+  font-size: 0.26rem;
+}
+
+.zhifu_cg .act_pages {
+  background-color: #fff;
+  width: 7.5rem;
+  margin: 0 auto;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+
+.zhifu_cg .act_pages ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.zhifu_cg .act_pages ul li {
+  margin-bottom: 0.2rem;
+  width: 3.46rem;
+  background-color: #fff;
+  border-radius: 0.12rem;
+  overflow: hidden;
+  padding-bottom: 0.2rem;
+}
+
+.zhifu_cg .act_pages ul li .pic {
+  display: inline-block;
+  width: 3.46rem;
+  height: 3.46rem;
+}
+
+.zhifu_cg .act_pages ul li h2 {
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.zhifu_cg .act_pages ul li h3 {
+  display: flex;
+  padding: 0 0.2rem;
+  flex-wrap: wrap;
+  margin-top: 0.1rem;
+}
+
+.zhifu_cg .act_pages ul li h3 span {
+  font-size: 0.22rem;
+  border: 1px solid #e01518;
+  border-radius: 0.05rem;
+  color: #e01518;
+  margin-bottom: 0.1rem;
+  line-height: 1;
+  padding: 0.04rem;
+  margin-right: 0.1rem;
+}
+
+.zhifu_cg .act_pages ul li h3 span:nth-child(2) {
+  border-color: #FF8B01;
+  color: #FF8B01;
+}
+
+.zhifu_cg .act_pages ul li p {
+  padding: 0 0.2rem;
+  text-align: right;
+  color: #e01518;
+}
+
+.zhifu_cg .act_pages ul li p em {
+  font-size: 0.34rem;
+  font-weight: bold;
+  font-family: 'din';
+  color: #e01518;
+}

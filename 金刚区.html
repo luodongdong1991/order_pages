@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>数码电器</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="wap-font-scale" content="no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="js/font.js"></script>
+  <!-- iconfont -->
+  <link rel="stylesheet" href="fonts/iconfont.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/navPages.css">
+  <!-- gundong -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/TouchSlide.1.1.js"></script>
+</head>
+
+<body>
+  <div id="app" class="nav_pages">
+    <div class="topheader3">
+      <i class="icon-icon-test59 iconfont" onclick="window.history.go(-1)"></i>
+      <h2>数码电器</h2>
+    </div>
+    <!-- nav_banner -->
+    <div class="nav_banner" id="nav_banner">
+      <div class="hd">
+        <ul><li></li></ul>
+      </div>
+      <div class="bd">
+        <ul>
+          <li><a href=""><img src="images/nav_banner.png"></a></li>
+          <li><a href=""><img src="images/nav_banner.png"></a></li>
+          <li><a href=""><img src="images/nav_banner.png"></a></li>
+          <li><a href=""><img src="images/nav_banner.png"></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- hot_sale -->
+    <div class="hot_sale">
+      <h5>热销榜单</h5>
+      <ul>
+        <li>
+          <a><img src="images/nav_good1.png"></a>
+          <p>好评率99%</p>
+          <img src="images/nav_bq1.png" alt="" class="bq">
+        </li>
+        <li>
+          <a><img src="images/nav_good2.png"></a>
+          <p>好评率99%</p>
+          <img src="images/nav_bq2.png" alt="" class="bq">
+        </li>
+        <li>
+          <a><img src="images/nav_good3.png"></a>
+          <p>好评率99%</p>
+          <img src="images/nav_bq3.png" alt="" class="bq">
+        </li>
+
+      </ul>
+    </div>
+    <div style="height:0.2rem;"></div>
+    <!--  act_pages-->
+    <div class="act_pages">
+      <ul>
+        <li>
+          <img src="images/nav_goods1.png" class="pic">
+          <h2>正宗纯手工红薯粉正宗纯手工红薯粉条条火锅食材粉红苕土豆大…</h2>
+          <h3>
+            <span>送200京豆</span>
+            <span>满100减20</span>
+          </h3>
+          <p class="jiage">￥<em>66.00</em></p>
+        </li>
+        <li>
+          <img src="images/nav_goods2.png" class="pic">
+          <h2>正宗纯手工红薯粉正宗纯手工红薯粉条条火锅食材粉红苕土豆大…</h2>
+          <h3>
+            <span>送200京豆</span>
+            <span>满100减20</span>
+          </h3>
+          <p class="jiage">￥<em>66.00</em></p>
+        </li>
+        <li>
+          <img src="images/nav_goods3.png" class="pic">
+          <h2>正宗纯手工红薯粉正宗纯手工红薯粉条条火锅食材粉红苕土豆大…</h2>
+          <h3>
+            <span>送200京豆</span>
+            <span>满100减20</span>
+          </h3>
+          <p class="jiage">￥<em>66.00</em></p>
+        </li>
+        <li>
+          <img src="images/nav_goods4.png" class="pic">
+          <h2>正宗纯手工红薯粉正宗纯手工红薯粉条条火锅食材粉红苕土豆大…</h2>
+          <h3>
+            <span>送200京豆</span>
+            <span>满100减20</span>
+          </h3>
+          <p class="jiage">￥<em>66.00</em></p>
+        </li>
+      </ul>
+    </div>
+    <!-- footer_tab -->
+    <div class="footer_tab">
+      <ul>
+        <li class="act"><a href=""><span></span><i>首页</i></img></a></li>
+        <li><a href=""><span></span><i>商城</i></a></li>
+        <li><a href=""><span></span><i>社区</i></a></li>
+        <li><a href=""><span></span><i>购物车</i></a></li>
+        <li><a href=""><span></span><i>我的</i></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script>
+TouchSlide({ 
+          slideCell:"#nav_banner",
+          titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+          mainCell:".bd ul", 
+          effect:"leftLoop", 
+          autoPlay:true,
+          autoPage:true, //自动分页
+          switchLoad:"_src"
+        });
+</script>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <style>
+        #app{margin: 0 auto;width:750px;}
+    </style>
+</head>
+<body>
+    <div id="app">
+        <el-form :inline="false" :model="formInline" class="demo-form-inline">
+            <el-form-item label='测试人'>
+              <el-input v-model="formInline.user" placeholder="测试人"></el-input>
+            </el-form-item>
+            <el-form-item label='身高'>
+                <el-input v-model="formInline.height" placeholder="cm"></el-input>
+              </el-form-item>
+              <el-form-item label='体重'>
+                <el-input v-model="formInline.weight" placeholder="kg"></el-input>
+              </el-form-item>
+              <el-form-item label='BMI'>
+                <el-input v-model="formInline.bmi" placeholder="BMI"></el-input>
+              </el-form-item>
+              <el-form-item>
+                <el-button type="primary" @click="onSubmit">我是不是很胖</el-button>
+              </el-form-item>
+          </el-form>
+          <!-- dialog -->
+          <el-dialog
+            title="提示"
+            :visible.sync="flag"
+            width="30%"
+            :before-close="handleClose">
+            <span>{{msg}}</span>
+            <span slot="footer" class="dialog-footer">
+                <el-button @click="flag = false">取 消</el-button>
+                <el-button type="primary" @click="flag = false">确 定</el-button>
+            </span>
+            </el-dialog>
+    </div>
+ <script>
+     //（BMI）=体重（kg）÷身高^2（m）
+     new Vue({
+        el:'#app',
+        data(){
+            return {
+                msg:'luo',
+                formInline:{
+                    user:'',
+                    height:'',
+                    weight:'',
+                    bmi:''
+                },
+                flag:false,
+
+            }
+        },
+        methods: {
+            //（BMI）=体重（kg）÷身高^2（m）
+            // <=18.4 瘦 18.4 ~23.9 正常 23.9~28胖子； >28很重的胖子
+            onSubmit(){
+                this.flag= true;
+                let res =  this.formInline.bmi*10
+                //判定用户；
+                //is 汪佳
+                if(this.formInline.user == '汪佳'){
+                    this.msg= '小仙女很苗条，多运动保持身材哦！！'
+                }else{
+                    //not her
+                    if(res <= 184){                   
+                        this.msg= '你是个瘦胖子！'
+                    }else if(185< res <=239){
+                        this.msg= '你是个正常的胖子！'
+                    }else if(239< res <=280){
+                        this.msg= '你是个大胖子！'
+                    }else{
+                        this.msg= '你是很重的胖子'
+                    }  
+                }   
+            },
+            handleClose(done) {
+                this.$confirm('确认关闭？')
+                .then(_ => {
+                    done();
+                })
+                .catch(_ => {});
+            }
+            
+        },
+        watch:{
+            "formInline.weight":function(val){
+                console.log('s')
+                let a = this.formInline.height;
+                let b = this.formInline.weight;
+                let c= b*10000/(a*a);
+                if(c<1){
+                    this.flag= true; 
+                    this.msg= '请输入人类的数据';
+                }
+                this.formInline.bmi = c.toFixed(1);
+            }
+        },
+        //过滤器
+        filters:{
+
+        }
+     })
+ </script>  
+</body>
+</html>

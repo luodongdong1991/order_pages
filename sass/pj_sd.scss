@@ -1,0 +1,93 @@
+//communit_test
+.topheader3{
+  height:0.88rem;display:flex;box-sizing:border-box;
+  padding:0 0.2rem;width:100%;align-items:center;
+  width:7.5rem;background:#f5f5fa;;
+  h2{display:table-cell;width:6.3rem;text-align:center;
+  font-size:0.3rem;font-weight:bold;width:80%;}
+  i{font-size:0.34rem;color:#666;width:10%;}
+  .right_font{font-size:0.26rem;color:#de1616;}
+
+}
+*{color:#333;box-sizing:border-box;}
+/*可以控制字体的长度*/ 
+.text_kz{
+  font-size: 0.26rem;
+  line-height: 0.40rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.btn3{
+  border-radius:0.5rem;border:1px solid #666;text-align:center;
+  line-height: 1;padding:0.2rem;color:#666;
+}
+.flex{display:flex;justify-content:space-between;align-items:center;;}
+
+/*评价晒单*/
+.pj_sd{height:100vh;
+  width:7.5rem;margin:0 auto;background-color:#f5f5fa;
+  .goods{display:flex;width:7.1rem;margin:0 auto;background-color:#fff;
+    padding:0.2rem;box-sizing:border-box;
+    border-top-left-radius:0.12rem;
+    border-top-right-radius:0.12rem;
+    img{height:1rem;width:1rem;margin-right:0.2rem;}
+    h5{width:5.45rem;}
+  }
+  .miaosu{display:flex;width:7.1rem;margin:0 auto;background-color:#fff;
+  padding:0.2rem;box-sizing:border-box;align-items:center;
+    h2{font-size:0.34rem;font-weight:bold;}
+    .block{height:0.4rem;vertical-align: middle;;
+      .el-rate__item{
+        .el-rate__icon{font-size:0.36rem;}
+        .el-icon-star-on{color:#de1616 !important;}
+      }
+    }
+  }
+  .tag{display:flex;width:7.1rem;margin:0 auto;background-color:#fff;
+    padding:0.2rem;box-sizing:border-box;align-items:center;
+    flex-wrap: wrap;
+    span{padding:0.15rem 0.25rem;margin-right:0.12rem;margin-bottom:0.12rem;
+    border-radius:0.5rem;background-color:#f5f5fa ;
+    color:#666;}
+  }
+  .text_line{display:flex;width:7.1rem;margin:0 auto;background-color:#fff;
+    padding:0.2rem;box-sizing:border-box;
+    p{border-top:1px solid #eee;color:#999;padding-top:0.4rem;}
+  }
+  .upload{
+    display:flex;width:7.1rem;margin:0 auto;background-color:#fff;
+    padding:0.2rem;box-sizing:border-box;
+    border-bottom-left-radius:0.12rem;
+    border-bottom-right-radius:0.12rem;
+    ul{
+      li{width:1.9rem;height:1.9rem;;}
+    }
+  }
+}
+/*图片上传*/
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 0.06;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #eee;
+}
+.avatar-uploader-icon {
+  font-size: 0.28rem;
+  color: #8c939d;
+  width: 1.78rem;
+  height: 1.78rem;
+  line-height: 1.78rem;
+  text-align: center;
+}
+.avatar {
+  width: 1.78rem;
+  height: 1.78rem;
+  display: block;
+}

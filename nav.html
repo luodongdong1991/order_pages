@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/font.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .nav_dh {
+            box-sizing: border-box;
+            overflow-y: auto;
+            height: .5rem;
+            line-height: 0.5rem;
+            z-index: 999;
+            width:7.5rem;
+        }
+
+        .nav_dh ul {
+           width:600px;
+        }
+
+        .nav_dh ul li {
+            font-size: 0.26rem;
+            text-align: center;
+            width: 1.5rem;
+            float:left;
+        }
+        .nav_dh ul li.current a{
+            color:blue;
+        }
+        .nav_dh ul li a {
+            color: #fe5d33;
+            font-size:0.3rem;;
+        }
+
+        .huandong::-webkit-scrollbar {
+            display: none;
+            height: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_dh huandong">
+        <ul>
+            <li><a href="#">导航一</a></li>
+            <li><a href="#">导航二</a></li>
+            <li><a href="#">导航三</a></li>
+            <li><a href="#">导航四</a></li>
+            <li><a href="#">导航五</a></li>
+            <li><a href="#">导航六</a></li>
+            <li><a href="#">导航六</a></li>
+        </ul>
+    </div>
+    <script>
+        //滚动nav;
+        oLi = document.querySelectorAll('.nav_dh ul li');
+        oUl = document.querySelector('.nav_dh ul');
+        onresize = function(){
+            let res = oLi.length * 1.5 ;
+            oUl.style.width =  res+ 'rem';
+            console.log(res+ 'rem')
+        };
+        //样式修改；
+        oLi.forEach((item,index)=>{
+            item.addEventListener('click',function(){
+                for(let i=0;i<oLi.length;i++){
+                    oLi[i].classList.remove('current');
+                }
+                this.classList.add('current');
+            })
+        });
+        let datalist = null;
+        $.ajax({
+            type:'GET',
+            url:'test.json',
+            data:datalist,
+            dataType:'json',
+            success:function(){},
+            err:function(){}
+        })
+    </script>
+</body>
+</html>
