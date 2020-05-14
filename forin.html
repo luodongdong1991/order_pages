@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        obj={
+            a:1,
+            b:2,
+            c:3
+        }
+        for( key in obj){
+            console.log(key)
+        }
+        //for in 打出他的key值   key-value  abc
+       arr = [1,2,3]
+       for( value of arr){
+           console.log(value)
+       }
+       for( key in arr){
+           console.log(key )   //012; 数组的key 是和他的角标相等的；
+       }
+        //for of 打出他的value value 123
+        //for of  可以遍历集合 包括 Array，Map，Set，String，TypedArray，arguments 对象等等
+    //    for(variable in iterrable){
+    //        //variable
+    //    }
+    //
+ </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="" onclick="openLink('nav.html')">
+        click me open a new url;
+    </div>
+    <div onclick="re()">reload this page</div>
+    <script>
+        console.log(window.location.href);//all
+        console.log(window.location.host);//host
+        console.log(window.location.pathname)// 端口号后面的
+        console.log(window.location.protocol)//
+        console.log(window.location.search)//查询部分
+        //open a new url;
+        function openLink(url){
+            window.location.assign(url)
+        }
+        //
+        function reloadPage(){
+            window.location.reload()
+        }
+        //replace
+        function re(){
+            window.location.replace('nav.html')
+        }
+    </script>
+</body>
+</html>
